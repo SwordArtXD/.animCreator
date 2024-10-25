@@ -1,6 +1,18 @@
 # .animCreator
-This app allows you to export animations/actions from an FBX file exported from blender or even MAYA as a .anim. You can either export single animations or in bulk by selecting the "Export All Animations" Button. You also have the option to delete, rename or export a single animation by right-clicking it.
-# In Blender
-1. Ensure the Frame Rate in the Output" Tab of the properties editor is set to 30 FPS to avoid stretching your animation and keeping its original frame count.
-2. Make sure that only the bones that you want animation data on exist! Even if you do not have any keyframe data in Blender, the app will create them. So you may want to duplicate different Blend files to suit your needs. You must also ensure that the animations you want exported do not have keyframe data for the deleted bones. You can delete such data by clicking the empty space of your scene and deleting them in the Dope Sheet.(Or else the animations won't appear in the app)
-3. In the export Menu, in the "Include" section, you only need to select the armature, nothing else. Ignore thje next section and head to "Armature". Uncheck "Add Leaf Bones" and head to "Animation". From there, you should uncheck "NLA strips" and set the "Simplify" setting to 0.
+
+## Overview
+This app lets you export animations or actions from an FBX file—whether exported from Blender or MAYA—into .anim format. You can choose to export individual animations or export them all at once by selecting the "Export All Animations" button. Additionally, you can right-click on an animation to delete, rename, or export it individually.
+
+## Using Blender
+
+### 1. Frame Rate Setting
+Ensure the frame rate in the Output tab of Blender’s properties editor is set to **30 FPS**. This will help maintain the animation’s original frame count and prevent any time-stretching.
+
+### 2. Clean Up Unused Bones
+Before exporting, make sure only the bones with actual animation data are present. Even if a bone doesn't have keyframes in Blender, the app will still generate them. To avoid this, you might want to create different Blend files tailored to your needs. Also, verify that no keyframe data exists for bones you’ve deleted. You can remove unwanted keyframes by clicking on the empty space in your scene and deleting them via the Dope Sheet. (Otherwise, the animations may not appear in the app.)
+
+### 3. FBX Export Settings
+When exporting to FBX, go to the **Include** section and select only the armature. Skip the next section and proceed to **Armature**, where you should uncheck "Add Leaf Bones." Then, under the **Animation** section, uncheck "NLA Strips" and set the **Simplify** value to 0.
+
+## Conclusion
+Once set up, the process is straightforward. If you encounter any bugs or have questions, feel free to reach out. If you’d like to contribute improvements to the software, DM me on Discord at **kb0mbyolo**!
